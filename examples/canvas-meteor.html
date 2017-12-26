@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="Content-Language" content="zh-CN">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <title>夜空星辰-canvas流星</title>
+    <meta name="keywords" content="HTML5,canvas,流星,画布,">
+    <meta name="description" content="使用canvas制作的流星雨">
+
+</head>
+<body>
+    <div class="blog-body">
+        <div class="blog-container">
+        <!-- 为 ECharts 准备一个具备大小（宽高）的 DOM -->
+            <canvas id="main" width="1200" height="700" style=" background: #393D49;"></canvas>
+        </div>
+    </div>
+
+</body>
+</html>
+<script src="./js/canvas-meteor.js"></script>
+<script>
+
+    //配置
+    var options = {"dotCount":50};
+    //实例化
+    var canvasMeteor = new CanvasMeteor('main',options);
+    //执行
+    canvasMeteor.process()
+
+</script>
+
